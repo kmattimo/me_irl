@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="koK-Ne-x3Y">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeIRL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Steps Counted" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pb-fB-o2E">
+                                <rect key="frame" x="180" y="28" width="240" height="52"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="k0a-mp-6v3"/>
+                                    <constraint firstAttribute="width" constant="240" id="mSM-he-cOA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="k0a-mp-6v3"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="110" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yy-Pn-pMT">
+                                <rect key="frame" x="180" y="83" width="240" height="52"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Experience" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy8-GQ-Vpf">
+                                <rect key="frame" x="180" y="157" width="240" height="52"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Sdw-fQ-WEJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Sdw-fQ-WEJ"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="220xp" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfV-pP-BSS">
+                                <rect key="frame" x="180" y="212" width="240" height="52"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iy8-GQ-Vpf" firstAttribute="top" secondItem="7Yy-Pn-pMT" secondAttribute="bottom" constant="22" id="6wv-9j-iao"/>
+                            <constraint firstItem="7Yy-Pn-pMT" firstAttribute="leading" secondItem="Iy8-GQ-Vpf" secondAttribute="leading" id="AzF-CM-f9U"/>
+                            <constraint firstItem="CfV-pP-BSS" firstAttribute="trailing" secondItem="Iy8-GQ-Vpf" secondAttribute="trailing" id="Flf-pE-XVQ"/>
+                            <constraint firstItem="7Yy-Pn-pMT" firstAttribute="top" secondItem="7pb-fB-o2E" secondAttribute="bottom" constant="3" id="GsB-84-mtg"/>
+                            <constraint firstItem="7pb-fB-o2E" firstAttribute="leading" secondItem="7Yy-Pn-pMT" secondAttribute="leading" id="Ij0-FL-FDn"/>
+                            <constraint firstItem="7pb-fB-o2E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="TtG-Zh-vhD"/>
+                            <constraint firstItem="CfV-pP-BSS" firstAttribute="top" secondItem="Iy8-GQ-Vpf" secondAttribute="bottom" constant="3" id="XnQ-ae-wW2"/>
+                            <constraint firstItem="7pb-fB-o2E" firstAttribute="trailing" secondItem="7Yy-Pn-pMT" secondAttribute="trailing" id="bVE-hw-UAT"/>
+                            <constraint firstItem="7pb-fB-o2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfQ-aV-mLQ"/>
+                            <constraint firstItem="Iy8-GQ-Vpf" firstAttribute="trailing" secondItem="7Yy-Pn-pMT" secondAttribute="trailing" id="kC4-71-FSU"/>
+                            <constraint firstItem="Iy8-GQ-Vpf" firstAttribute="leading" secondItem="CfV-pP-BSS" secondAttribute="leading" id="px7-Zl-jwj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="450"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="RtL-Oy-85c">
+            <objects>
+                <viewController id="koK-Ne-x3Y" customClass="LoginViewController" customModule="MeIRL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Asj-tP-r8j"/>
+                        <viewControllerLayoutGuide type="bottom" id="lpR-f1-DnT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7V5-0S-pL4" customClass="Login">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Please enter an unique username" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY1-Qf-Sp0">
+                                <rect key="frame" x="180" y="183" width="240" height="88"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Cqf-sd-9qM"/>
+                                    <constraint firstAttribute="width" constant="240" id="e0i-gn-rYN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Cqf-sd-9qM"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AN0-UV-NmM">
+                                <rect key="frame" x="180" y="285" width="240" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C88-rE-IDz">
+                                <rect key="frame" x="281" y="323" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="submit:" destination="koK-Ne-x3Y" eventType="touchUpInside" id="mPR-iE-lFj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AN0-UV-NmM" firstAttribute="leading" secondItem="bY1-Qf-Sp0" secondAttribute="leading" id="9Cu-kS-5bL"/>
+                            <constraint firstItem="AN0-UV-NmM" firstAttribute="top" secondItem="bY1-Qf-Sp0" secondAttribute="bottom" constant="14" id="JbE-W5-y87"/>
+                            <constraint firstItem="AN0-UV-NmM" firstAttribute="centerY" secondItem="7V5-0S-pL4" secondAttribute="centerY" id="Mkf-am-Itl"/>
+                            <constraint firstItem="AN0-UV-NmM" firstAttribute="centerX" secondItem="7V5-0S-pL4" secondAttribute="centerX" id="RNB-Ls-xTg"/>
+                            <constraint firstItem="C88-rE-IDz" firstAttribute="top" secondItem="AN0-UV-NmM" secondAttribute="bottom" constant="8" symbolic="YES" id="cOB-Gd-0Nn"/>
+                            <constraint firstItem="C88-rE-IDz" firstAttribute="centerX" secondItem="AN0-UV-NmM" secondAttribute="centerX" id="dBu-wX-u6t"/>
+                            <constraint firstItem="bY1-Qf-Sp0" firstAttribute="trailing" secondItem="AN0-UV-NmM" secondAttribute="trailing" id="mFU-G0-Y78"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="username" destination="AN0-UV-NmM" id="Qvk-ei-7lK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ozb-rU-9XU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="450"/>
+        </scene>
+    </scenes>
+</document>
