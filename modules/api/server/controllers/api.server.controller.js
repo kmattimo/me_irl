@@ -24,8 +24,29 @@ exports.experience= function (req, res) {
 
 exports.addExperience= function (req, res) {
   console.log(req.body);
-  
-  res.send();
+ var expArray = req.body;
+ var username = req.params.userID;
+ var p;
+
+ Player.findOne({ 'username': username }, function (err, player) {
+   if (err) return errorHandler(err);
+   console.log("username: " + player.username);
+   
+   for(var i=0; i<expArray.exp.length; i++) {
+     player.exp.push(expArray.exp[i]);
+   }
+   
+   console.log(expArray.exp.length);
+   player.save(function (err) {
+     if (err) {
+       return res.status(400).send({
+         message: errorHandler.getErrorMessage(err)
+       });
+     } else {
+       res.json(player);
+     }
+   });
+ });
 };
 
 exports.createUser = function(req,res) {

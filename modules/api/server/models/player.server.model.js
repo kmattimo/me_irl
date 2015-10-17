@@ -31,7 +31,6 @@ var PlayerSchema = new Schema({
   },
   name: {
     type: String,
-    required: 'name cannot be blank',
     trim: true
   },
   exp: [{ 
@@ -45,12 +44,14 @@ var PlayerSchema = new Schema({
     }]
 });
 
-for(var i = 1; i <= 5; i++){
-	PlayerSchema.virtual('experiencePerHRZone' + i + 'Hour').get(function() {
-		var that = this;
-		return goalZoneExperienceTable[that.goal][i];
-	});
-}
+
+//commented out for now because jslint hates functions in loops
+// for(var i = 1; i <= 5; i++){
+// 	PlayerSchema.virtual('experiencePerHRZone' + i + 'Hour').get(function() {
+// 		var that = this;
+// 		return goalZoneExperienceTable[that.goal][i];
+// 	});
+// }
 
 PlayerSchema.virtual('experience').get(function() {
   var experience = 0;
