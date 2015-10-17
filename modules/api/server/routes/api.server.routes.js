@@ -14,7 +14,7 @@ module.exports = function (app) {
 
 app.route('/api/experience/:userID').all()
   .get(api.experience)
-  .post(api.setExperience);
+  .post(api.addExperience);
   
   
 app.route('/api/user/create').all()

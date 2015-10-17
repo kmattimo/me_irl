@@ -22,8 +22,10 @@ exports.experience= function (req, res) {
   
 };
 
-exports.setExperience= function (req, res) {
-  res.json(90000);
+exports.addExperience= function (req, res) {
+  console.log(req.body);
+  
+  res.send();
 };
 
 exports.createUser = function(req,res) {
