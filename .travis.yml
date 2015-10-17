@@ -46,6 +46,6 @@ deploy:
   provider: heroku
   api_key:
     secure: HRWQW9HlZtbTpQ8o+URfYRNh5Bgm6xxZJ6NRnUaQtSm9t3a88vXUL54OsgMgLTgg2u1N+/+ulfp0vZnnGRNW1z44xGVEVAlsiOYY+n5qUOXBLhMXZA9tao68/kyAQmB/Bfb8Ii4n+4fgyQIrgxoKH1wgCj0/p8szlW8FUUt7CjGboE0LPmyakjTbORKS9gs1HoiyFM/DHOm/P6RvOqMMjGgzeacE+n77Wh2dfmMK2bED4GAJF126Z/+gQ1CIeZFIHcqygIsVQ8CBnGAqRwZ9lsC7+cqaC2enwUBIn3s7FJOjc037ifHju6z0rEImkhMfGoPX+BbSu6PwMqQ1ZMZPL0mPLYpo5E3qwhhI5njJR8ZBuRhWS6U12Vptw2tpwpyqp6uy5WzHOSsVN+3n10F9G19yZrNznfoCNF2ayXgdvtWFEO4rSyrARSzzTVs7/lbCYJ4avIisM+KFBcyc9Bcpn3pRuuSmE3njTR6Ste+AyIKJn/TAPSQpLNqBXEFHYLygTyFSt+IUVyjdVMB4R8xfcirARiQdozMxd7aLJZIiktuoMZmOnS5BjGUOBfqKct+nicC0teg+xL6GEZg1NwkWE97CE4iSQbRHOi+2CnmMcn7Z4rlD7oPYhn+4eo1/Ov2vkov2Ca0fIG8vq39OGkRZi5Cc0xKaJT6bgNnIHDCeldA=
-  app: me_irl
+  app: me-irl
   on:
     repo: kmattimo/me_irl
