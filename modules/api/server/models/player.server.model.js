@@ -41,7 +41,11 @@ var PlayerSchema = new Schema({
     value: {
       type: Number
     },
-    }]
+  }],
+}, 
+{
+  toObject: { virtuals: true },
+  toJSON: { virtuals: true }
 });
 
 
