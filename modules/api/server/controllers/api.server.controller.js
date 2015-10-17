@@ -13,3 +13,13 @@ exports.test= function (req, res) {
   res.json("asdf");
 };
 
+exports.experience= function (req, res) {
+  res.json(req.params.userID);
+  // console.log(req.params.userID);
+};
+
+exports.setExperience= function (req, res) {
+  res.json(90000);
+};
+
+

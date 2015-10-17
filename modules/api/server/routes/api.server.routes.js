@@ -12,12 +12,7 @@ module.exports = function (app) {
     .get(api.test)
     .post(api.test);
 
-  // Single article routes
-  // app.route('/api/articles/:articleId').all(articlesPolicy.isAllowed)
-  //   .get(articles.read)
-  //   .put(articles.update)
-  //   .delete(articles.delete);
-  // 
-  // // Finish by binding the article middleware
-  // app.param('articleId', articles.articleByID);
+app.route('/api/experience/:userID').all()
+  .get(api.experience)
+  .post(api.setExperience);
 };
