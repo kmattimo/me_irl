@@ -18,16 +18,21 @@ exports.user = function(req, res) {
 };
 
 exports.experience= function (req, res) {
-  res.json(req.params.userID);
-  
+  var username = req.params.userID;
+  Player.findOne({ 'username': username }, function (err, player) {
+    if (err) return errorHandler(err);
+      var experience = 0;
+      for(var i=0; i<player.exp.length; i++) {
+          experience += player.exp[i].value;
+      }
+      res.json(experience);
+  });
 };
 
 exports.addExperience= function (req, res) {
   console.log(req.body);
  var expArray = req.body;
  var username = req.params.userID;
- var p;
-
  Player.findOne({ 'username': username }, function (err, player) {
    if (err) return errorHandler(err);
    console.log("username: " + player.username);
@@ -53,7 +58,6 @@ exports.createUser = function(req,res) {
   console.log(req.body);
   var p = new Player(req.body);
   console.log(p.title);
-  
   
   p.save(function (err) {
     if (err) {
