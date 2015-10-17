@@ -1,12 +1,28 @@
 'use strict';
 
+var path = require('path'),
+   mongoose = require('mongoose'),
+  Player = mongoose.model('Player'),
+  errorHandler = require(path.resolve('./modules/core/server/controllers/errors.server.controller'));
+
+
 /**
  * Render the main application page
  */
 exports.renderIndex = function (req, res) {
-  res.render('modules/core/server/views/index', {
-    user: req.user || null, testObject:'asdf'
+  
+  var users = Player.find(function (err, users) { 
+    if (err) return errorHandler(err);
+      console.log(users);
+      res.render('modules/core/server/views/index', {
+        user: req.user || null, 
+        usersObject:users
+      });
+    
   });
+  
+  
+
 };
 
 /**
