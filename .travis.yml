@@ -1,9 +1,7 @@
 language: node_js
 sudo: false
 node_js:
-  - 0.10
   - 0.12
-  - 4
 # NodeJS v4 requires gcc 4.8
 env:
   - NODE_ENV=travis CXX="g++-4.8" CC="gcc-4.8"
@@ -46,3 +44,10 @@ cache:
   directories:
   - node_modules/
   - public/lib/
+deploy:
+  provider: heroku
+  api_key:
+    secure: dDBVUYPbaHGoFEDI/2fkb5hkLIcfiwXAlICttWY+GdtmBNFBz9/zOkBT2x6OyzIfAz1nyoIC87G05QtUD+wnV0UTC4Z4vY5Bu27ovPYrzNNAgOkWUBbsJHoNoWVJxGhtZ6NmreCCfqWbMI1E+4Ow1KnWJlL/ahzr0rMi4DQPowSSLwsujWAu/W44YucJmQMqNFnSqxwG2YKTJInulmumg3eLoc7gDfgVJcISmpGYEQvOgpGpzqQ7DQvNz3g9/TEkhbZKEGfNHs7CJB0KY9wklAWtT8fDWeU81K/dm025R69pesYryc6eJDuOeCtTzOy2WU9yvdcGcTvpf3AB/syNm8btSkmRMVZvhDRirft3H2o/AuPQ1X3DAN3vEoh4uo4AgQO0qkOUiV6KNdcGxyEcQTXpMw/yOG/Ar/8rus+s/NNmxb+fIf1RhJBPtDul31H5k2uVQO1OwrKTzSFVy8hTc0LuXEXu6eQPrxQ0YoWst/AX4VummDwmV6Elwu6WPFC/P+1NpDM8MZm5sFmufJ3bVl98RbIpPDh9Prb17ChhLwXxiUJv6b0L2KEaRSU+ofrZRfuodZv3zrTvV4Ju5W7lz8HOTxJVlzxjs/Bj/jGbfLIvlg6KWiZjwGCGe6sCni2ClluFdb59qwL/DN/OR8BTZmtjv6XJ2ou4gFWMUC7mvNk=
+  app: me_irl
+  on:
+    repo: kmattimo/me_irl
